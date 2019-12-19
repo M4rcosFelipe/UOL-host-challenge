@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet"  href="css/index.css"/>
+    <link rel="stylesheet"  href="css/new.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<header id="header">
+    <img id="logo" src="images/uol-lg.png"/>
+</header>
+<main id="container">
+    <div id="clientes">
+        <img id="user-icon"src="images/user_icon.png"/>
+        <h1>Painel de Clientes</h1> 
+    </div>
+   
+    <div id="wrapper">
+        <div id="wrapper-text">
+            <h2>Novo usuário</h2>
+            <p>Informe os campos a seguir para criar novo usuário:</p>
+        </div>
+    </div>
+
+
+    <form>
+        <input class="form-item" type="text" id="nome" placeholder="Nome"autocomplete="off"/>
+        <input class="form-item" type="email" id="email" placeholder="Email"/>
+        <input class="form-item" type="text" id="cpf" placeholder="CPF">
+        <input class="form-item" type="tel" id="telefone" placeholder="Telefone"/>
+        
+        <div class="div-select">
+            <select id="form-select">
+                <option selected="selected" value="Status">Status</option>
+                <option value="Ativo">Ativo</option>
+                <option value="Inativo">Inativo</option>
+                <option value="Aguardando ativação">Aguardando ativação</option>
+                <option value="Desativado">Desativado</option>
+            </select>
+        </div>
+
+        <div class="actions">
+            <div id="criar">Criar</div>
+    
+            <div id="voltar">
+                <a href="index.html" class="link-voltar">Voltar</a>
+            </div>
+    
+        </div>
+    
+      
+        
+    </form>
+    
+</main>
+<script src="new_bundle.js"></script>
+</body>
+</html>

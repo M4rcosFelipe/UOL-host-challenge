@@ -1,0 +1,21 @@
+{
+  "name": "UOL",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel -w ./src/main.js -o ./public/bundle.js",
+    "newdev":"babel -w ./src/new_main.js -o ./public/new_bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-async-to-generator": "^7.7.4"
+  }
+}
