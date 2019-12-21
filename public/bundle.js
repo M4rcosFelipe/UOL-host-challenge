@@ -15,8 +15,8 @@ function _loadClients() {
       yield setLocalStorage();
     }
 
+    document.querySelector(".spinner").remove();
     const data = JSON.parse(localStorage.getItem("lista_de_clientes"));
-    console.log("dados buscados do local storage e passados para renderClients");
     renderClients(data);
   });
   return _loadClients.apply(this, arguments);
@@ -31,7 +31,6 @@ function _setLocalStorage() {
     const response = yield fetch("https://demo5283088.mockable.io/customers");
     clientes = yield response.json();
     localStorage.setItem("lista_de_clientes", JSON.stringify(clientes.data));
-    console.log("local storage setado");
   });
   return _setLocalStorage.apply(this, arguments);
 }
@@ -41,7 +40,6 @@ function genereateLi(clienteData) {
     clienteData.status = "Aguardando-ativação";
   }
 
-  console.log("linha gerada");
   return `<li class="cliente">
 
   <div class="user-name cliente-component">
@@ -71,7 +69,6 @@ function renderClients(clientes) {
   }
 
   footer.innerText = `Exibindo ${clientes.length} clientes`;
-  console.log("clientes renderizados");
 }
 
 loadClients();

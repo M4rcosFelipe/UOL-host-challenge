@@ -256,6 +256,21 @@ footer{
     }
 }
 
+.spinner{
+    margin:auto;
+    margin-top:50px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:10px solid rgb(228, 206, 174);
+    border-left-color: #E29933;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to{transform:rotate(360deg);}
+}
+
 
 
 
